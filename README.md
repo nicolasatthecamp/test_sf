@@ -13,4 +13,9 @@
 
 1. Quelle version est nécessaire pour installer le projet
 2. Installer le projet
-3. Lancer le server de dev local et accéder à l'interface web
+3. Configurer la base de données : créer le fichier sqlite,  creer le schema, appliquer les migrations
+4. Lancer le server de dev local et accéder à l'interface web
+5. Lancer les fixtures
+6. Se connecter
+7. Editer un profil
+8. Ajouter de lastname
