@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+<div style="max-width: 800px; margin: 0 auto; padding: 2rem; font-family: Arial, sans-serif;">
+    <header style="text-align: center; margin-bottom: 3rem;">
+        <h1 style="color: #2c3e50; font-size: 2.5rem; margin-bottom: 1rem;">
+            🚀 {{ title }}
+        </h1>
+        <p style="color: #7f8c8d; font-size: 1.2rem; line-height: 1.6;">
+            {{ message }}
+        </p>
+    </header>
+
+    <main>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                    color: white; 
+                    padding: 2rem; 
+                    border-radius: 10px; 
+                    margin-bottom: 2rem; 
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h2 style="margin-top: 0; font-size: 1.8rem;">🎯 Fonctionnalités</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #f39c12;">✅</span> Contrôleur DefaultController créé
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #f39c12;">✅</span> Vue Twig personnalisée
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #f39c12;">✅</span> Route configurée sur '/'
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <span style="color: #f39c12;">✅</span> Template responsive et moderne
+                </li>
+            </ul>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+            <div style="background: #ecf0f1; 
+                        padding: 1.5rem; 
+                        border-radius: 8px; 
+                        border-left: 4px solid #3498db;">
+                <h3 style="color: #2c3e50; margin-top: 0;">📚 Documentation</h3>
+                <p style="color: #7f8c8d; margin-bottom: 1rem;">
+                    Consultez la documentation officielle de Symfony pour en apprendre davantage.
+                </p>
+                <a href="https://symfony.com/doc" 
+                   style="color: #3498db; text-decoration: none; font-weight: bold;"
+                   target="_blank">
+                    Voir la documentation →
+                </a>
+            </div>
+
+            <div style="background: #ecf0f1; 
+                        padding: 1.5rem; 
+                        border-radius: 8px; 
+                        border-left: 4px solid #e74c3c;">
+                <h3 style="color: #2c3e50; margin-top: 0;">🛠️ Développement</h3>
+                <p style="color: #7f8c8d; margin-bottom: 1rem;">
+                    Commencez à développer votre application en ajoutant de nouveaux contrôleurs et vues.
+                </p>
+                <a href="#" 
+                   style="color: #e74c3c; text-decoration: none; font-weight: bold;">
+                    Créer un nouveau contrôleur →
+                </a>
+            </div>
+
+            <div style="background: #ecf0f1; 
+                        padding: 1.5rem; 
+                        border-radius: 8px; 
+                        border-left: 4px solid #27ae60;">
+                <h3 style="color: #2c3e50; margin-top: 0;">🔧 Configuration</h3>
+                <p style="color: #7f8c8d; margin-bottom: 1rem;">
+                    Explorez les fichiers de configuration dans le dossier config/.
+                </p>
+                <a href="#" 
+                   style="color: #27ae60; text-decoration: none; font-weight: bold;">
+                    Voir la configuration →
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+            <p style="color: #6c757d; margin: 0;">
+                🌟 Votre application Symfony est prête ! 
+                <br>
+                <small>Créé le {{ "now"|date("d/m/Y à H:i") }}</small>
+            </p>
+        </div>
+    </main>
+</div>
+{% endblock %}
