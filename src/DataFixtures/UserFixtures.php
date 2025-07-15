@@ -19,6 +19,7 @@ class UserFixtures extends Fixture
         // Créer l'utilisateur demo
         $user = new User();
         $user->setEmail('demo@symfony.fr');
+        $user->setFirstname('Demo');
         $user->setRoles(['ROLE_USER']);
         
         // Hasher le mot de passe

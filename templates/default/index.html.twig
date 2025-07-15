@@ -18,19 +18,31 @@
                 <!-- Utilisateur connecté -->
                 <div style="color: #27ae60;">
                     <p style="margin: 0; font-size: 1.1rem;">
-                        👋 Bonjour <strong>{{ app.user.email }}</strong> !
+                        👋 Bonjour <strong>{{ app.user.firstname ? app.user.firstname : app.user.email }}</strong> !
                     </p>
-                    <a href="{{ path('app_logout') }}" 
-                       style="display: inline-block; 
-                              margin-top: 0.5rem; 
-                              background: #e74c3c; 
-                              color: white; 
-                              padding: 0.5rem 1rem; 
-                              text-decoration: none; 
-                              border-radius: 5px; 
-                              font-size: 0.9rem;">
-                        🚪 Se déconnecter
-                    </a>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="{{ path('app_profile') }}" 
+                           style="display: inline-block; 
+                                  margin-right: 0.5rem;
+                                  background: #3498db; 
+                                  color: white; 
+                                  padding: 0.5rem 1rem; 
+                                  text-decoration: none; 
+                                  border-radius: 5px; 
+                                  font-size: 0.9rem;">
+                            👤 Mon profil
+                        </a>
+                        <a href="{{ path('app_logout') }}" 
+                           style="display: inline-block; 
+                                  background: #e74c3c; 
+                                  color: white; 
+                                  padding: 0.5rem 1rem; 
+                                  text-decoration: none; 
+                                  border-radius: 5px; 
+                                  font-size: 0.9rem;">
+                            🚪 Se déconnecter
+                        </a>
+                    </div>
                 </div>
             {% else %}
                 <!-- Utilisateur non connecté -->
@@ -52,7 +64,7 @@
     </header>
 
     <main>
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+        {# <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                     color: white; 
                     padding: 2rem; 
                     border-radius: 10px; 
@@ -73,7 +85,7 @@
                     <span style="color: #f39c12;">✅</span> Template responsive et moderne
                 </li>
             </ul>
-        </div>
+        </div> #}
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
             <div style="background: #ecf0f1; 
@@ -90,7 +102,7 @@
                     Voir la documentation →
                 </a>
             </div>
-
+{# 
             <div style="background: #ecf0f1; 
                         padding: 1.5rem; 
                         border-radius: 8px; 
@@ -117,7 +129,7 @@
                    style="color: #27ae60; text-decoration: none; font-weight: bold;">
                     Voir la configuration →
                 </a>
-            </div>
+            </div> #}
         </div>
 
         <div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">

@@ -12,8 +12,8 @@ class DefaultController extends AbstractController
     public function index(): Response
     {
         return $this->render('default/index.html.twig', [
-            'title' => 'Bienvenue sur mon application Symfony',
-            'message' => 'Ceci est la page d\'accueil par défaut créée avec DefaultController.',
+            'title' => 'Bienvenue et Bonne chance !',
+            'message' => 'Le site se charge avec succès. Vous pouvez maintenant explorer les fonctionnalités de l\'application.',
         ]);
     }
 }
