@@ -79,3 +79,6 @@
 ### VS Code ###
 .vscode/
 .editorconfig
+
+### SQLite Database ###
+/data/
