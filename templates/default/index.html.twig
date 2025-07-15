@@ -48,7 +48,8 @@
                 <!-- Utilisateur non connecté -->
                 <div style="color: #7f8c8d;">
                     <p style="margin: 0; margin-bottom: 0.5rem;">Vous n'êtes pas connecté</p>
-                    <a href="{{ path('app_login') }}" 
+                    {# <a href="{{ path('app_login') }}"  #}
+                    <a href="{{ path('app_oups') }}" 
                        style="display: inline-block; 
                               background: #3498db; 
                               color: white; 
@@ -102,6 +103,21 @@
                     Voir la documentation →
                 </a>
             </div>
+
+            {# <div style="background: #ecf0f1; 
+                        padding: 1.5rem; 
+                        border-radius: 8px; 
+                        border-left: 4px solid #e74c3c;">
+                <h3 style="color: #2c3e50; margin-top: 0;">😱 Page d'erreur</h3>
+                <p style="color: #7f8c8d; margin-bottom: 1rem;">
+                    Découvrez notre page d'erreur personnalisée avec un design moderne.
+                </p>
+                <a href="{{ path('app_oups') }}" 
+                   style="color: #e74c3c; text-decoration: none; font-weight: bold;">
+                    Voir la page Oups →
+                </a>
+            </div> #}
+        </div>
 {# 
             <div style="background: #ecf0f1; 
                         padding: 1.5rem; 

@@ -16,4 +16,13 @@ class DefaultController extends AbstractController
             'message' => 'Le site se charge avec succès. Vous pouvez maintenant explorer les fonctionnalités de l\'application.',
         ]);
     }
+
+    #[Route('/oups', name: 'app_oups')]
+    public function oups(): Response
+    {
+        return $this->render('default/oups.html.twig', [
+            'title' => 'Oups !',
+            'message' => 'Il semble qu\'il y ait eu un petit problème...',
+        ]);
+    }
 }

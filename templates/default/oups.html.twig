@@ -1,0 +1,165 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+<div style="max-width: 600px; margin: 0 auto; padding: 2rem; font-family: Arial, sans-serif; text-align: center;">
+    
+    <!-- Animation CSS pour un effet de rebond -->
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .shake {
+            animation: shake 0.5s ease-in-out;
+        }
+    </style>
+
+    <header style="margin-bottom: 3rem;">
+        <!-- Grande emoji avec animation -->
+        <div style="font-size: 8rem; margin-bottom: 1rem;" class="bounce">
+            😱
+        </div>
+        
+        <h1 style="color: #e74c3c; font-size: 3rem; margin-bottom: 1rem; font-weight: bold;">
+            {{ title }}
+        </h1>
+        
+        <p style="color: #7f8c8d; font-size: 1.3rem; line-height: 1.6; margin-bottom: 2rem;">
+            {{ message }}
+        </p>
+    </header>
+
+    <main>
+        <!-- Message d'erreur stylisé -->
+        <div style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); 
+                    color: white; 
+                    padding: 2rem; 
+                    border-radius: 15px; 
+                    margin-bottom: 2rem; 
+                    box-shadow: 0 8px 25px rgba(238, 90, 36, 0.3);">
+            <h2 style="margin-top: 0; font-size: 1.8rem;">💥 Quelque chose s'est mal passé !</h2>
+            <p style="margin-bottom: 1rem; font-size: 1.1rem;">
+                Ne vous inquiétez pas, c'est probablement temporaire. Voici quelques suggestions :
+            </p>
+            
+            <ul style="list-style: none; padding: 0; text-align: left; max-width: 400px; margin: 0 auto;">
+                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                    <span style="position: absolute; left: 0;">🔄</span>
+                    Rafraîchissez la page
+                </li>
+                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                    <span style="position: absolute; left: 0;">🏠</span>
+                    Retournez à l'accueil
+                </li>
+                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                    <span style="position: absolute; left: 0;">☕</span>
+                    Prenez une pause café
+                </li>
+                <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+                    <span style="position: absolute; left: 0;">📞</span>
+                    Contactez le support si le problème persiste
+                </li>
+            </ul>
+        </div>
+
+        <!-- Boutons d'action -->
+        <div style="margin-bottom: 3rem;">
+            <a href="{{ path('app_default') }}" 
+               style="display: inline-block; 
+                      margin: 0.5rem; 
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                      color: white; 
+                      padding: 1rem 2rem; 
+                      text-decoration: none; 
+                      border-radius: 25px; 
+                      font-size: 1.1rem; 
+                      font-weight: bold; 
+                      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+                      transition: transform 0.2s;"
+               onmouseover="this.style.transform='translateY(-2px)'"
+               onmouseout="this.style.transform='translateY(0)'">
+                🏠 Retour à l'accueil
+            </a>
+            
+            <a href="javascript:location.reload()" 
+               style="display: inline-block; 
+                      margin: 0.5rem; 
+                      background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); 
+                      color: white; 
+                      padding: 1rem 2rem; 
+                      text-decoration: none; 
+                      border-radius: 25px; 
+                      font-size: 1.1rem; 
+                      font-weight: bold; 
+                      box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+                      transition: transform 0.2s;"
+               onmouseover="this.style.transform='translateY(-2px)'"
+               onmouseout="this.style.transform='translateY(0)'">
+                🔄 Rafraîchir
+            </a>
+        </div>
+
+        <!-- Message de réconfort -->
+        <div style="background: #f8f9fa; 
+                    padding: 2rem; 
+                    border-radius: 10px; 
+                    border-left: 5px solid #3498db;
+                    margin-bottom: 2rem;">
+            <h3 style="color: #2c3e50; margin-top: 0;">💡 Le saviez-vous ?</h3>
+            <p style="color: #7f8c8d; margin: 0; font-style: italic;">
+                Même les meilleurs développeurs rencontrent des erreurs. C'est comme ça qu'on apprend ! 
+                Cette page "Oups" fait partie du processus normal de développement d'une application Symfony.
+            </p>
+        </div>
+
+        <!-- Navigation supplémentaire -->
+        {% if app.user %}
+        <div style="margin-top: 2rem;">
+            <p style="color: #7f8c8d; margin-bottom: 1rem;">Connecté en tant que <strong>{{ app.user.firstname ? app.user.firstname : app.user.email }}</strong></p>
+            <a href="{{ path('app_profile') }}" 
+               style="color: #3498db; text-decoration: none; margin-right: 1rem;">
+                👤 Mon profil
+            </a>
+            <a href="{{ path('app_logout') }}" 
+               style="color: #e74c3c; text-decoration: none;">
+                🚪 Se déconnecter
+            </a>
+        </div>
+        {% else %}
+        <div style="margin-top: 2rem;">
+            <a href="{{ path('app_login') }}" 
+               style="color: #3498db; text-decoration: none;">
+                🔐 Se connecter
+            </a>
+        </div>
+        {% endif %}
+
+        <!-- Code d'erreur fictif -->
+        <div style="margin-top: 3rem; padding: 1rem; background: #ecf0f1; border-radius: 5px;">
+            <small style="color: #95a5a6; font-family: monospace;">
+                Erreur #{{ random(1000, 9999) }} - {{ "now"|date("d/m/Y H:i:s") }}
+            </small>
+        </div>
+    </main>
+</div>
+{% endblock %}
