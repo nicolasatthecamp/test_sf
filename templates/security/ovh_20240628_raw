@@ -1,0 +1,167 @@
+$TTL 3600
+@	IN SOA dns105.ovh.net. tech.ovh.net. (2024062300 86400 3600 3600000 300)
+        IN NS     dns105.ovh.net.
+        IN NS     ns105.ovh.net.
+   3600 IN MX     0 thecamp-fr.mail.protection.outlook.com.
+     60 IN A     75.2.70.75
+     60 IN A     99.83.190.102
+        IN TXT     "1|www.thecamp.fr"
+  86400 IN TXT     "atlassian-domain-verification=6Ano16TWqR9JRoQ9QFa866IXoAnCydKFpnpekp2WvUmIMYgmfMdqIqqvTTPat2Hx"
+        IN TXT     "google-site-verification=iSk5vEDQFNFgxq5PcIaaAGstJ99hh7fftIIsBSWysN8"
+        IN TXT     "google-site-verification=WnKIDa28QIJKcimx8gLRWaBSPdx_6krE-n1t_6DAOLs"
+   3600 IN TXT     "MS=ms40609551"
+        IN TXT     "uj36leqkr01u21ocobkgh70pe0"
+   3600 IN TXT     "v=spf1 ip4:35.156.24.160 ip4:35.156.167.6 ip4:176.162.161.144/29 ip4:195.200.167.136/29 include:spf.protection.outlook.com include:spfext.thecamp.fr include:mailgun.org include:_spf.mailersend.net include:spf.mailjet.com -all"
+        IN TXT     "8dn3gv21nkdo6sfbjndtodsldr"
+        IN TXT     "SFMC-sa8rESE2gmv9BLpnrtOLJIYfjBP_WQ_ZtG81V-xp"
+        IN TXT     "9q7c77ujsh7hnk2b8vlkl62t31"
+        IN TXT     "brevo-code:7a99693a01a1e1eed7f2b226ba8dd717"
+        IN TXT     "cg0ntvunf51ttm93d5jf3jmqf"
+_acme-challenge.build        IN TXT     "9scSLmzSBBZF9UsI4fDrSSNeekctq1o7aPpOHEmm1oI"
+_acme-challenge.goto        IN TXT     "Oisjl0z7bAQmgH5iYmHXi3IXxZiy8zVPeGsUHQSB1M0"
+_acme-challenge.nextgeneration        IN TXT     "0ks0Y7eCwR2qGcjv-xyvJXxuPRP2xATRg_oopDWQZK8"
+_acme-challenge.transfo        IN TXT     "3TbTDrs4XyYAXaWALbjfaEbMHYIwSiMgYtmToeBfStc"
+_dmarc        IN TXT     "v=DMARC1; p=none"
+_h323cs._tcp        IN SRV     10 10 1720 expressway1.thecamp.fr.
+_h323cs._tcp        IN SRV     10 10 1720 expressway2.thecamp.fr.
+_h323ls._udp        IN SRV     10 10 1719 expressway1.thecamp.fr.
+_h323ls._udp        IN SRV     10 10 1719 expressway2.thecamp.fr.
+_h323rs._udp        IN SRV     10 10 1719 expressway1.thecamp.fr.
+_h323rs._udp        IN SRV     10 10 1719 expressway2.thecamp.fr.
+_sip._tcp        IN SRV     10 10 5060 expressway1.thecamp.fr.
+_sip._tcp        IN SRV     10 10 5060 expressway2.thecamp.fr.
+_sip._tls   3600 IN SRV     100 1 443 sipdir.online.lync.com.
+_sip._tls.africa   3600 IN SRV     100 1 443 sipdir.online.lync.com.
+_sip._tls.consultant   3600 IN SRV     100 1 443 sipdir.online.lync.com.
+_sip._udp        IN SRV     10 10 5060 expressway1.thecamp.fr.
+_sip._udp        IN SRV     10 10 5060 expressway2.thecamp.fr.
+_sipfederationtls._tcp   3600 IN SRV     100 1 5061 sipfed.online.lync.com.
+_sipfederationtls._tcp.africa   3600 IN SRV     100 1 5061 sipfed.online.lync.com.
+_sipfederationtls._tcp.consultant   3600 IN SRV     100 1 5061 sipfed.online.lync.com.
+_sips._tcp.sipmtls        IN SRV     10 10 5062 expressway1.thecamp.fr.
+_sips._tcp.sipmtls        IN SRV     10 10 5062 expressway2.thecamp.fr.
+_sips._tls        IN SRV     10 10 5062 expressway1.thecamp.fr.
+_sips._tls        IN SRV     10 10 5062 expressway2.thecamp.fr.
+_webflow.bar        IN TXT     "one-time-verification=29c330b4-93e7-4646-8b9f-36566cc60650"
+accounts        IN CNAME     awsreverseproxyp
+achats        IN CNAME     awsreverseproxyp
+africa   3600 IN MX     0 africa-thecamp-fr.mail.protection.outlook.com.
+africa   3600 IN TXT     "v=spf1 include:spf.protection.outlook.com -all"
+api-gw        IN CNAME     awsreverseproxyp
+auth        IN CNAME     awsreverseproxyp
+autodiscover   3600 IN CNAME     autodiscover.outlook.com.
+autodiscover.africa   3600 IN CNAME     autodiscover.outlook.com.
+autodiscover.consultant   3600 IN CNAME     autodiscover.outlook.com.
+autodiscover.hotel     60 IN CNAME     autodiscover.outlook.com.
+awsreverseproxyp        IN A     35.156.20.100
+bar        IN CNAME     proxy-ssl.webflow.com.
+booked        IN CNAME     awsreverseproxyp
+booking        IN A     213.186.33.5
+booking     60 IN TXT     "4|https://www.thecamp.fr/"
+build        IN A     185.106.135.85
+cabinet-curiosites        IN CNAME     awsreverseproxyp
+cap        IN CNAME     cname.tally.so.
+catalogue-formation        IN CNAME     catalogue-dendreo.com.
+consultant   3600 IN MX     0 consultant-thecamp-fr.mail.protection.outlook.com.
+consultant   3600 IN TXT     "v=spf1 include:spf.protection.outlook.com -all"
+contact        IN CNAME     cname.tally.so.
+devisubox        IN A     213.186.33.5
+devisubox     60 IN TXT     "2|https://www.devisubox.com/dv/dv.php5?pgl=Project/interface&sRef=1Q8E4QW69"
+devisubox     60 IN TXT     "t|Devisubox"
+devisubox     60 IN TXT     "d|Frame redirect to Devisubox thecamp"
+displayers-back        IN CNAME     awsreverseproxyp.thecamp.fr.
+dpv2        IN CNAME     awsreverseproxyp.thecamp.fr.
+dr        IN CNAME     cname.tally.so.
+dzc        IN TXT     "pkma3ntjlhr6g5d9tr0me70uce"
+enterpriseenrollment   3600 IN CNAME     enterpriseenrollment.manage.microsoft.com.
+enterpriseenrollment.africa   3600 IN CNAME     enterpriseenrollment.manage.microsoft.com.
+enterpriseenrollment.consultant   3600 IN CNAME     enterpriseenrollment.manage.microsoft.com.
+enterpriseregistration   3600 IN CNAME     enterpriseregistration.windows.net.
+enterpriseregistration.africa   3600 IN CNAME     enterpriseregistration.windows.net.
+enterpriseregistration.consultant   3600 IN CNAME     enterpriseregistration.windows.net.
+event-manager        IN CNAME     awsreverseproxyp.thecamp.fr.
+event-manager-back        IN CNAME     awsreverseproxyp.thecamp.fr.
+expressway        IN A     176.162.161.147
+expressway        IN A     195.200.167.139
+expressway1        IN A     195.200.167.139
+expressway2        IN A     176.162.161.147
+fablab        IN CNAME     proxy-ssl.webflow.com.
+fablabs        IN CNAME     awsreverseproxyp.thecamp.fr.
+fablabs-admin        IN CNAME     awsreverseproxyp.thecamp.fr.
+fileshare     60 IN CNAME     awsreverseproxyp.thecamp.fr.
+fow        IN CNAME     awsreverseproxyp
+goto        IN A     185.106.135.85
+grafana        IN CNAME     awsreverseproxyp.thecamp.fr.
+hotel   3000 IN MX     0 hotel-thecamp-fr.mail.protection.outlook.com.
+hotel        IN TXT     "v=spf1 include:spf.protection.outlook.com -all"
+journal        IN CNAME     awsreverseproxyp
+k1._domainkey        IN CNAME     dkim.mcsv.net.
+kraken        IN CNAME     awsreverseproxyp.thecamp.fr.
+lights-sds-management        IN CNAME     awsreverseproxyp.thecamp.fr.
+lyncdiscover   3600 IN CNAME     webdir.online.lync.com.
+lyncdiscover.africa   3600 IN CNAME     webdir.online.lync.com.
+lyncdiscover.consultant   3600 IN CNAME     webdir.online.lync.com.
+mail        IN NS     ns1.exacttarget.com.
+mail        IN NS     ns2.exacttarget.com.
+mail        IN NS     ns3.exacttarget.com.
+mail        IN NS     ns4.exacttarget.com.
+mail        IN MX     1 mx4.mail.ovh.net.
+mail        IN MX     10 mx3.mail.ovh.net.
+mail._domainkey        IN TXT     "k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeMVIzrCa3T14JsNY0IRv5/2V1/v2itlviLQBwXsa7shBD6TrBkswsFUToPyMRWC9tbR/5ey0nRBH0ZVxp+lsmTxid2Y2z+FApQ6ra2VsXfbJP3HE6wAO0YTVEJt1TmeczhEd2Jiz/fcabIISgXEdSpTYJhb0ct0VJRxcg4c8c7wIDAQAB"
+mailjet._1a7efa85        IN TXT     "1a7efa85e7ff5c00e4307c29365c516b"
+mailjet._domainkey        IN TXT     "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYZ7JDVqEDJSB12nAyvIkDmexJ+2Vce51bJH+FsKvO447tH2k+AcvOTOK7SrMytva1xH7n2fVIjxglaq2mgQj2HxPSGoMkJq+GDVIh9NUo/bpG1BrpvvKObPN73JKrBZJg1ormleO1AhmwKlUDV8hpzFm+xbs/Z5Yck7OOlsdtcwIDAQAB"
+mailo._domainkey        IN TXT     "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+nQLSDzNzDU82YIVC36WuCN+6XInY+5rqV5XUjd7DmJOdR3LRpnkcwgJl0dFK4dMqGjFH9k6PgjzfUee6Ko9wVr1aClKZW5+MF6lrN0Pc7o3MmdmsWe298CjqD/wS5q32Zq1M74pNNkHDLHbG+y8CiciUi4Yzz5Dv+TLtriESvwIDAQAB"
+mandrill._domainkey        IN TXT     "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB"
+map        IN CNAME     awsreverseproxyp
+map-react        IN CNAME     awsreverseproxyp.thecamp.fr.
+middleware-pms        IN CNAME     awsreverseproxyp
+mlsend._domainkey        IN TXT     "v=DKIM1;t=s;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDItY8uBOtQ65JKMrSEUrQgE1mo7LKh7Z1rBdU4OwtxPoXjKbgi1UC7P+O/WV5jjUtwcZm4ZMViIM77vJNPus0oW/FaOWSWlyruVF1GAwRd+UZZO14csDj0oi8tmqlynQrS5NPNfDwNeyqf6OOqvVne8NoP8hCghgCWfaFTm6cf0QIDAQAB"
+monitoring-events        IN CNAME     awsreverseproxyp.thecamp.fr.
+msoid   3600 IN CNAME     clientconfig.microsoftonline-p.net.
+mta        IN CNAME     mailersend.net.
+mw-datas        IN CNAME     awsreverseproxyp.thecamp.fr.
+mw-mdlg-ms        IN CNAME     awsreverseproxyp.thecamp.fr.
+my        IN CNAME     awsreverseproxyp
+new        IN CNAME     proxy-ssl.webflow.com.
+ovhcontrol        IN TXT     "+0oT7x+yyCVnorZVXryQSQ"
+plus        IN CNAME     awsreverseproxyp
+pocdisplayback        IN CNAME     awsreverseproxyp.thecamp.fr.
+portal-api        IN CNAME     awsreverseproxyp
+quest        IN CNAME     awsreverseproxyp
+re        IN CNAME     awsreverseproxyp.thecamp.fr.
+recette        IN A     35.156.167.6
+recette-crm        IN CNAME     recette
+recette-join        IN CNAME     recette
+recette-moodle        IN CNAME     recette
+recette-pms        IN CNAME     recette
+recettev2        IN CNAME     recette
+resend._domainkey.event-manager        IN TXT     "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCXqVIes0WzxmiZlpQy5RRsJEN2H4sLLs6H0nAJicXrwvKvHlOiXAWxDhJ9deVzSb/kRj/UVBqkKA6DZMMX4dGZ+E5R2U5P8RttJNMeaJQIGV4jFY2yCnTEBopLKlcokiQ0iAMyRALsT/5SlDgsZJrApQM2go5KJib1rkXBiWv8mQIDAQAB"
+s2s        IN A     3.125.56.113
+selector1._domainkey   3600 IN CNAME     selector1-thecamp-fr._domainkey.thecamp.onmicrosoft.com.
+selector2._domainkey   3600 IN CNAME     selector2-thecamp-fr._domainkey.thecamp.onmicrosoft.com.
+send.event-manager        IN MX     10 feedback-smtp.us-east-1.amazonses.com.
+send.event-manager        IN TXT     "v=spf1 include:amazonses.com ~all"
+sip   3600 IN CNAME     sipdir.online.lync.com.
+sip.africa   3600 IN CNAME     sipdir.online.lync.com.
+sip.consultant   3600 IN CNAME     sipdir.online.lync.com.
+smtp        IN CNAME     ssl0.ovh.net.
+sommaire        IN CNAME     awsreverseproxyp
+spfext   3600 IN TXT     "v=spf1 ip4:62.180.43.96/28 ip4:62.180.43.80/28 ip4:62.180.43.224/28 ip4:62.180.25.176/28 ip4:185.106.135.11/32 include:_spf.salesforce.com include:spf.mandrillapp.com -all"
+staging        IN CNAME     recette
+static        IN CNAME     awsreverseproxyp
+support-it        IN CNAME     cname.tally.so.
+survey        IN CNAME     cname.tally.so.
+synergy        IN CNAME     awsreverseproxyp.thecamp.fr.
+tc-planner-back        IN CNAME     event-manager-back.thecamp.fr.
+tc-planner-front        IN CNAME     event-manager.thecamp.fr.
+tcecsmail.dkim._domainkey        IN TXT     "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzUTG1cQ3XvR1Tl6nwtAEkXd288Dl63pIrtRHxao0Zbn5G5cn/A+GtNyI/ClSGCHh8QJKYEpORkxHHrVkwznxQ4KihZep71vst1i/FmTQeZ8gTStrV7IQFffSqUJzLrIvSBEt+V5gSddKQ+zsUdFX9q04ULJBHG789E4BQJSbIRQIDAQAB"
+tcmail.dkim._domainkey        IN TXT     "v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHch7PExrHiXlRiWVGfBOMlE+DB9s/Z3AA9+BZ8+e4rcH3XOCbewRXGvoIhC+BRMnDLnF3JKUMjWpGrX3ohEImRIZd69WNjy6OlyvknHJnc/RGqHLTNQNOpK5cXUKHAz94+BxUH8gZh/UV1alBsuxZzo+45s46dD7rugg4MwiqkQIDAQAB"
+tcsalesforce.dkim._domainkey        IN TXT     "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDET8dvT/YDyuFO3TsyX6R19thdSLzt+zE+nn3N5K51RUrfKtLbXGNZeaoWOptJxBWr7F75etEGJ1MYMz0k5sX+Jrwb+EL0MwNBto9UgDfkmNt0zN0mzJSN9VBf57i3TpOTz4Nxlkp8hRm9tk+1UvcTHDmrGQLUe1rUoluNZlW3rwIDAQAB"
+training        IN CNAME     proxy-ssl.webflow.com.
+transfo        IN A     185.106.135.85
+ulshvtzer8lf        IN CNAME     domainverification.dropbox.com.
+v1        IN CNAME     awsreverseproxyp
+virtual-map        IN CNAME     awsreverseproxyp
+vpn        IN A     195.200.167.138
+web-app-api        IN CNAME     awsreverseproxyp
+www     60 IN CNAME     proxy-ssl.webflow.com.
